@@ -35,5 +35,16 @@ class ProductsTableSeeder extends Seeder
             'note' => 'Lorem ipsum',
             'image' => 'https://source.unsplash.com/_0JpjeqtSyg/1600x900'
         ]);
+
+        Product::create([
+            'business_id' => 2,
+            'name' => 'Guiso de carne',
+            'description' => 'Plato con papa y carne de res',
+            'price' => 12000,
+            'category' => 'Principal',
+            'preparation_time' => '10 minutos',
+            'note' => 'Lorem ipsum',
+            'image' => 'https://source.unsplash.com/a-gPTenlS0U/1600x900'
+        ]);
     }
 }
