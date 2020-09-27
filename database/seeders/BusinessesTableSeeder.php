@@ -29,5 +29,21 @@ class BusinessesTableSeeder extends Seeder
             'secondary_color' => 'AA5588',
             'note' => 'No abrimos los lunes'
         ]);
+
+        Business::create([
+            'name' => 'Sazón Paisa',
+            'description' => 'Restaurante de prueba 2',
+            'category' => 'Comidas Típicas',
+            'email' => 'azytanapaisa@mail.com',
+            'address' => 'Carrera falsa 456',
+            'contact' => 'Juan Ortiz',
+            'web_page' => 'http://sazonpaisa.com',
+            'logo' => 'http://images.google.com',
+            'cover_image' => 'http://images.google.com',
+            'qr_code' => 'http://images.google.com',
+            'primary_color' => 'DD3366',
+            'secondary_color' => 'AA5588',
+            'note' => 'Almuerzos'
+        ]);
     }
 }
