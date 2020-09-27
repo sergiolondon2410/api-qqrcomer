@@ -12,4 +12,6 @@ class ApiController extends Controller
         return response()->json($businesses, 200, ['Content-Type' => 'application/json;charset=UTF-8', 'Charset' => 'utf-8'],
         JSON_UNESCAPED_UNICODE);
     }
+
+    // Acá empieza el método x
 }
