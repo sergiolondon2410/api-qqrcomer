@@ -55,4 +55,9 @@ class Product extends Model
         'price' => 'required',
         'image' => 'required'
     ];
+
+    public function business()
+    {
+        return $this->belongsTo(Business::class);
+    }
 }
