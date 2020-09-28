@@ -19,4 +19,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('businesses', 'App\Http\Controllers\ApiController@getAllBusinesses');
+Route::get('businesses/{id}', 'App\Http\Controllers\ApiController@getBusiness');
+Route::get('{slug}', 'App\Http\Controllers\ApiController@getAllBusinessProductsBySlug');
 Route::get('products/business/{id}', 'App\Http\Controllers\ApiController@getAllBusinessProducts');

@@ -27,7 +27,8 @@ class BusinessesTableSeeder extends Seeder
             'qr_code' => 'http://images.google.com',
             'primary_color' => 'DD3366',
             'secondary_color' => 'AA5588',
-            'note' => 'No abrimos los lunes'
+            'note' => 'No abrimos los lunes',
+            'slug' => 'mighty-meals'
         ]);
 
         Business::create([
@@ -43,7 +44,8 @@ class BusinessesTableSeeder extends Seeder
             'qr_code' => 'http://images.google.com',
             'primary_color' => 'DD3366',
             'secondary_color' => 'AA5588',
-            'note' => 'Almuerzos'
+            'note' => 'Almuerzos',
+            'slug' => 'sazon-paisa'
         ]);
     }
 }

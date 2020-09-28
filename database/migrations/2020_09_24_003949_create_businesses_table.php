@@ -17,17 +17,18 @@ class CreateBusinessesTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('description');
-            $table->string('category');
+            $table->string('category')->nullable();
             $table->string('email');
-            $table->string('address');
-            $table->string('contact');
-            $table->string('web_page');
+            $table->string('address')->nullable();
+            $table->string('contact')->nullable();
+            $table->string('web_page')->nullable();
             $table->string('logo');
-            $table->string('cover_image');
+            $table->string('cover_image')->nullable();
             $table->string('qr_code');
-            $table->string('primary_color');
-            $table->string('secondary_color');
-            $table->string('note');
+            $table->string('primary_color')->nullable();
+            $table->string('secondary_color')->nullable();
+            $table->string('note')->nullable();
+            $table->string('slug')->unique();
             $table->timestamps();
             $table->softDeletes();
 

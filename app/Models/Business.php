@@ -29,7 +29,8 @@ class Business extends Model
         'qr_code',
         'primary_color',
         'secondary_color',
-        'note'
+        'note',
+        'slug'
     ];
 
     /**
@@ -50,7 +51,8 @@ class Business extends Model
         'qr_code' => 'string',
         'primary_color' => 'string',
         'secondary_color' => 'string',
-        'note' => 'string'
+        'note' => 'string',
+        'slug' => 'string'
     ];
 
     /**
@@ -60,6 +62,13 @@ class Business extends Model
      */
     public static $rules = [
         'name' => 'required',
-        'email' => 'required'
+        'email' => 'required',
+        'logo' => 'required',
+        'slug' => 'required',
     ];
+
+    public function products()
+    {
+        return $this->hasMany(Product::class);
+    }
 }
